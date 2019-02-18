@@ -25,17 +25,29 @@
                                     <action selector="closeButtonTapped:" destination="NrZ-tE-Gbd" eventType="touchUpInside" id="Jmc-jb-iTj"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dfq-Ww-2al">
+                                <rect key="frame" x="0.0" y="20" width="375" height="537"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Dap-s6-DzB" firstAttribute="bottom" secondItem="XCj-pn-lRi" secondAttribute="bottom" constant="40" id="5yI-om-UDU"/>
+                            <constraint firstItem="Dfq-Ww-2al" firstAttribute="trailing" secondItem="Dap-s6-DzB" secondAttribute="trailing" id="977-ae-AKG"/>
                             <constraint firstItem="XCj-pn-lRi" firstAttribute="centerX" secondItem="7pI-tg-yBB" secondAttribute="centerX" id="Q4h-V5-IZ3"/>
+                            <constraint firstItem="Dfq-Ww-2al" firstAttribute="leading" secondItem="Dap-s6-DzB" secondAttribute="leading" id="Umc-b4-V5c"/>
+                            <constraint firstItem="XCj-pn-lRi" firstAttribute="top" secondItem="Dfq-Ww-2al" secondAttribute="bottom" constant="40" id="lLa-Cj-JDb"/>
+                            <constraint firstItem="Dfq-Ww-2al" firstAttribute="top" secondItem="Dap-s6-DzB" secondAttribute="top" id="u65-Ov-ouP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dap-s6-DzB"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Dfq-Ww-2al" id="cRb-c0-P7S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Id2-i2-dAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>

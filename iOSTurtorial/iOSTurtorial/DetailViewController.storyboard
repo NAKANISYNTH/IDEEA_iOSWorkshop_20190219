@@ -27,16 +27,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ptN-IO-32v">
+                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ptN-IO-32v" firstAttribute="top" secondItem="rCJ-39-8x5" secondAttribute="bottom" id="1cL-hh-dFJ"/>
+                            <constraint firstItem="ptN-IO-32v" firstAttribute="bottom" secondItem="A0J-YL-FyT" secondAttribute="bottom" id="5iK-kH-VlU"/>
                             <constraint firstItem="rCJ-39-8x5" firstAttribute="top" secondItem="A0J-YL-FyT" secondAttribute="top" id="6Sz-vS-L7v"/>
+                            <constraint firstAttribute="trailing" secondItem="ptN-IO-32v" secondAttribute="trailing" id="CkQ-lt-2Cl"/>
                             <constraint firstItem="A0J-YL-FyT" firstAttribute="trailing" secondItem="rCJ-39-8x5" secondAttribute="trailing" constant="16" id="Nn8-iR-cmn"/>
                             <constraint firstItem="rCJ-39-8x5" firstAttribute="leading" secondItem="A0J-YL-FyT" secondAttribute="leading" constant="16" id="dZY-6t-dgy"/>
+                            <constraint firstItem="ptN-IO-32v" firstAttribute="leading" secondItem="A0J-YL-FyT" secondAttribute="leading" id="jS3-S9-C1M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A0J-YL-FyT"/>
                     </view>
                     <connections>
+                        <outlet property="mapView" destination="ptN-IO-32v" id="w66-cA-mCQ"/>
                         <outlet property="titleLabel" destination="rCJ-39-8x5" id="OJe-8W-00x"/>
                     </connections>
                 </viewController>

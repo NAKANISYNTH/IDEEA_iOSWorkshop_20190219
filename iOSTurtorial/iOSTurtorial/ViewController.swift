@@ -26,5 +26,13 @@ class ViewController: UIViewController {
         timeLabel.text = dateFormatter.string(from: now)
     }
     
+    @IBAction func showListButtonTapped(_ sender: Any) {
+        //自作したStoryboardを生成
+        let sb = UIStoryboard(name: "ListViewController", bundle: nil)
+        //storyboardから自作したViewControllerを生成
+        let vc = sb.instantiateInitialViewController()!
+        //モーダル遷移する
+        present(vc, animated: true, completion: nil)
+    }
 }
 

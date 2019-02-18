@@ -30,6 +30,10 @@ extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("row number:", indexPath.row)
+        
+        let sb = UIStoryboard(name: "DetailViewController", bundle: Bundle.main)
+        let vc = sb.instantiateInitialViewController()!
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

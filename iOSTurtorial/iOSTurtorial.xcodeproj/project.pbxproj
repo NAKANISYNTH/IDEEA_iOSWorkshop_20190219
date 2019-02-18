@@ -16,6 +16,8 @@
 		E64A0F77221ADE9800BA005C /* iOSTurtorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64A0F76221ADE9800BA005C /* iOSTurtorialUITests.swift */; };
 		E64A0F87221B02FD00BA005C /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64A0F86221B02FD00BA005C /* ListViewController.storyboard */; };
 		E64A0F89221B04FC00BA005C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64A0F88221B04FC00BA005C /* ListViewController.swift */; };
+		E64A0F8B221B289800BA005C /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64A0F8A221B289800BA005C /* DetailViewController.storyboard */; };
+		E64A0F8D221B28F300BA005C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64A0F8C221B28F300BA005C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		E64A0F78221ADE9800BA005C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64A0F86221B02FD00BA005C /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
 		E64A0F88221B04FC00BA005C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E64A0F8A221B289800BA005C /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
+		E64A0F8C221B28F300BA005C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				E64A0F5A221ADE9700BA005C /* Main.storyboard */,
 				E64A0F88221B04FC00BA005C /* ListViewController.swift */,
 				E64A0F86221B02FD00BA005C /* ListViewController.storyboard */,
+				E64A0F8C221B28F300BA005C /* DetailViewController.swift */,
+				E64A0F8A221B289800BA005C /* DetailViewController.storyboard */,
 				E64A0F5D221ADE9800BA005C /* Assets.xcassets */,
 				E64A0F5F221ADE9800BA005C /* LaunchScreen.storyboard */,
 				E64A0F62221ADE9800BA005C /* Info.plist */,
@@ -237,6 +243,7 @@
 			files = (
 				E64A0F61221ADE9800BA005C /* LaunchScreen.storyboard in Resources */,
 				E64A0F5E221ADE9800BA005C /* Assets.xcassets in Resources */,
+				E64A0F8B221B289800BA005C /* DetailViewController.storyboard in Resources */,
 				E64A0F5C221ADE9700BA005C /* Main.storyboard in Resources */,
 				E64A0F87221B02FD00BA005C /* ListViewController.storyboard in Resources */,
 			);
@@ -266,6 +273,7 @@
 				E64A0F59221ADE9700BA005C /* ViewController.swift in Sources */,
 				E64A0F57221ADE9700BA005C /* AppDelegate.swift in Sources */,
 				E64A0F89221B04FC00BA005C /* ListViewController.swift in Sources */,
+				E64A0F8D221B28F300BA005C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

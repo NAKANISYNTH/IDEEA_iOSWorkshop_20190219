@@ -12,6 +12,8 @@ class ListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    let cellNameArray = ["London", "New York", "Paris", "Tokyo", "Hong Kong", "Singapore"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +34,9 @@ extension ListViewController: UITableViewDelegate {
         print("row number:", indexPath.row)
         
         let sb = UIStoryboard(name: "DetailViewController", bundle: Bundle.main)
-        let vc = sb.instantiateInitialViewController()!
+        //ViewControllerをDetailViewControllerにキャスト
+        let vc = sb.instantiateInitialViewController() as! DetailViewController
+        vc.titleStr = cellNameArray[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -44,11 +48,12 @@ extension ListViewController: UITableViewDelegate {
 
 extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return cellNameArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
+        cell.textLabel?.text = cellNameArray[indexPath.row]
         return cell
     }
 }
